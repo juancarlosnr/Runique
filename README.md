@@ -36,7 +36,7 @@ El objetivo es demostrar cómo estructurar un proyecto **Android** utilizando:
 
 - [x] Creación de los módulos
 - [x] Añadir convention plugins
-- [ ] Añadir utilidades
+- [x] Añadir utilidades
 - [ ] Añadir feature autenticación
 - [ ] Añadir feature trackear carrera
 - [ ] Añadir room para guardar localmente las carreras
