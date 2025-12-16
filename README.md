@@ -1,72 +1,28 @@
-# Rick and Morty KMP App
+# Runique App
 
 [![Kotlin](https://img.shields.io/badge/Kotlin-2.2.20-blue?logo=kotlin)](https://kotlinlang.org/)
 [![Ktor](https://img.shields.io/badge/Ktor-HTTP%20Client-green)](https://ktor.io/)
 [![Room](https://img.shields.io/badge/Room-Database-orange)](https://developer.android.com/training/data-storage/room)
-[![Paging3](https://img.shields.io/badge/Paging-3-yellow)](https://developer.android.com/topic/libraries/architecture/paging/v3-overview)
 [![Koin](https://img.shields.io/badge/Koin-DI-lightgrey)](https://insert-koin.io/)
-[![KMP](https://img.shields.io/badge/KMP-Multiplatform-purple)](https://kotlinlang.org/docs/multiplatform.html)
 
-Una aplicación **Kotlin Multiplatform (KMP)** basada en la API de [Rick and Morty](https://rickandmortyapi.com/), desarrollada con arquitectura moderna y librerías multiplataforma.
+Una aplicación **Android** desarrollada con arquitectura moderna y las últimas últimas prácticas del mercado:
 
-El objetivo es demostrar cómo estructurar un proyecto **KMP** utilizando:
+El objetivo es demostrar cómo estructurar un proyecto **Android** utilizando:
+- **Convention Plugins** para una gestión de los gradles entre los diferentes módulos
+- **Dynamic Feature Module** para que un módulo solo se descargue cuando se vaya a usar
 - **Ktor** para consumo de API
 - **Room** para persistencia local
-- **Paging 3** para paginación de datos
 - **Koin** para inyección de dependencias
-
 
 ---
 
 ## 🚀 Tecnologías y librerías
 
-- **Kotlin Multiplatform** (Android + iOS)
+- **Kotlin** (Android)
 - **Ktor** – cliente HTTP multiplataforma
 - **Room** – base de datos local (Android)
-- **Paging 3** – soporte de listas paginadas
 - **Koin** – inyección de dependencias ligera
 - **Coroutines + Flow** – programación reactiva asíncrona
-
----
-
-## 📂 Estructura del proyecto
-
-```
-rick-and-morty-kmp/
-│── androidApp/           
-│── iosApp/             
-│── shared/              
-│   ├── data/             
-│   ├── di/          
-│   ├── domain/              
-│   ├── ui/               
-
----
-```
-## ⚙️ Configuración
-
-### 1. Clonar el repositorio
-```bash
-git clone https://github.com/tuusuario/rick-and-morty-kmp.git
-```
-
-### 2. Abrir en Android Studio
-- Recomendado: **Android Studio Ladybug o superior** (con soporte KMP)
-- Instalar el plugin **Kotlin Multiplatform Mobile**
-
-### 3. Sincronizar dependencias
-Gradle descargará automáticamente las dependencias al abrir el proyecto.
-
----
-
-## 🔌 API usada
-La app consume datos de personajes, episodios y ubicaciones de:  
-👉 [https://rickandmortyapi.com/](https://rickandmortyapi.com/)
-
-Ejemplo de endpoint:
-```
-https://rickandmortyapi.com/api/character
-```
 
 ---
 
@@ -78,16 +34,14 @@ https://rickandmortyapi.com/api/character
 
 ## 🧩 Roadmap
 
-- [x] Configuración de proyecto KMP
-- [x] Consumo de API con Ktor
-- [x] Añadir room para guardar el personaje diario
-- [x] Paginación con Paging3
-- [x] Inyección con Koin
-- [x] UI en Compose Multiplatform
-- [x] Añadir idiomas inglés y español
+- [x] Creación de los módulos
+- [x] Añadir convention plugins
+- [ ] Añadir utilidades
+- [ ] Añadir feature autenticación
+- [ ] Añadir feature trackear carrera
+- [ ] Añadir room para guardar localmente las carreras
+- [ ] Añadir dynamic feature de analíticas
+- [ ] Añadir aplicación para wear os
 - [ ] Tests unitarios y de integración
-- [x] Añadir Github Actions
-- [ ] Añadir Previews para cada pantalla
-- [x] Añadir aplicacion en desktop
-
+- [ ] Añadir Github Actions
 ---
