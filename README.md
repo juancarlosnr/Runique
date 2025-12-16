@@ -28,7 +28,7 @@ El objetivo es demostrar cómo estructurar un proyecto **Android** utilizando:
 
 ## 📸 Capturas
 
-*(Agrega capturas de la app en Android/iOS aquí)*
+
 
 ---
 
