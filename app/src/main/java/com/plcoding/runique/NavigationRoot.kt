@@ -1,5 +1,6 @@
 package com.plcoding.runique
 
+import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.navigation.NavGraphBuilder
 import androidx.navigation.NavHostController
@@ -54,6 +55,12 @@ private fun NavGraphBuilder.authGraph(navController: NavHostController) {
                     navController.navigate("login")
                 }
             )
+        }
+
+        composable(
+            route = "login"
+        ){
+            Text(text = "Login")
         }
     }
 }
